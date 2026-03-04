@@ -737,6 +737,327 @@ h1 {
   margin-bottom: 0;
 }
 
+/* Recruitment page components */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.72rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.1;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:focus-visible,
+.faq-list summary:focus-visible {
+  outline: 3px solid rgba(52, 152, 219, 0.35);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: #0f5fa6;
+  border-color: #0f5fa6;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background: #0b4f8b;
+  border-color: #0b4f8b;
+  color: #ffffff !important;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  border-color: #9db6cf;
+  color: #0f3d66 !important;
+}
+
+.btn-secondary:hover {
+  background: #edf4fb;
+  border-color: #7f9fbe;
+  color: #0b3458 !important;
+}
+
+.btn-ghost {
+  background: #f6f8fa;
+  border-color: #d8e1ea;
+  color: #234763 !important;
+}
+
+.btn-ghost:hover {
+  background: #eaf0f5;
+  border-color: #c6d5e2;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.info-banner {
+  border-radius: 0.65rem;
+  border: 1px solid #d4e4f4;
+  background: #f4f9ff;
+  color: #1e4061;
+  padding: 0.8rem 1rem;
+  margin: 1.1rem 0 1.5rem;
+}
+
+.info-banner p {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.info-banner-warning {
+  background: #fdf0f2;
+  border-color: #e5b8be;
+  color: #7a2731;
+}
+
+.recruit-page > .info-banner-warning {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.recruit-page > .info-banner-warning p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.recruit-hero {
+  padding: 1.8rem 1.5rem;
+  border: 1px solid #dce4ec;
+  border-radius: 0.9rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.recruit-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.recruit-hero h1 {
+  font-size: 2rem;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #3f6280;
+  margin: 0;
+}
+
+.lead {
+  max-width: none;
+  color: #334a60;
+  margin: 0.5rem 0;
+  text-wrap: pretty;
+}
+
+.recruit-page p {
+  text-wrap: pretty;
+}
+
+.hero-actions,
+.inline-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.recruit-section {
+  margin: 2.3rem 0;
+}
+
+.recruit-section > h2 {
+  margin-bottom: 1rem;
+}
+
+.steps-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.step-card {
+  border: 1px solid #d9e3ec;
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  padding: 1.3rem 1.05rem 1.05rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 1px 0 rgba(12, 64, 115, 0.05);
+}
+
+.step-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  background: linear-gradient(180deg, #2c79bf 0%, #0f5fa6 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -0.58rem;
+  left: 0.85rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 0 0 1px #a9c3dd, 0 3px 8px rgba(15, 95, 166, 0.25);
+}
+
+.step-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  min-height: 2.6em;
+  text-wrap: balance;
+}
+
+.step-card p {
+  margin: 0;
+  color: #4c6277;
+  text-wrap: pretty;
+  min-height: 3.95em;
+}
+
+.recruit-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.recruit-card {
+  border: 1px solid #dfe6ed;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recruit-card h3 {
+  margin: 0 0 0.45rem;
+}
+
+.recruit-card p {
+  margin: 0 0 0.65rem;
+  color: #4a5f73;
+}
+
+.compact-list {
+  margin: 0.2rem 0 0.9rem;
+  padding-left: 1.15rem;
+}
+
+.compact-list li {
+  margin-bottom: 0.35rem;
+}
+
+.recruit-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bullet-columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.bullet-panel {
+  border: 1px solid #e1e7ee;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.bullet-panel h3 {
+  margin-top: 0;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.faq-list details {
+  border: 1px solid #dee5ed;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  padding: 0.65rem 0.9rem;
+}
+
+.faq-list summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  float: right;
+  color: #2f587c;
+}
+
+.faq-list details[open] summary::after {
+  content: "\2212";
+}
+
+.faq-list p {
+  margin: 0.65rem 0 0;
+  color: #4d6479;
+}
+
+.enquiry-form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.enquiry-form-panel {
+  border: 1px solid #dce4ec;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.enquiry-form-panel h3 {
+  margin-top: 0;
+}
+
+.enquiry-form-panel iframe {
+  border: 0;
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
 /* Intern list styles */
 .intern-list {
   list-style: none;
@@ -893,6 +1214,45 @@ h1 {
     width: 100%;
     text-align: center;
     display: block;
+  }
+
+  .recruit-hero {
+    padding: 1.25rem;
+  }
+
+  .recruit-hero h1 {
+    font-size: 1.65rem;
+  }
+
+  .hero-actions,
+  .inline-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .inline-actions .btn {
+    width: 100%;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card h3 {
+    min-height: 0;
+  }
+
+  .step-card p {
+    min-height: 0;
+  }
+
+  .recruit-card-actions {
+    flex-direction: column;
+  }
+
+  .recruit-card-actions .btn {
+    width: 100%;
   }
 }
 

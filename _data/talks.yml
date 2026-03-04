@@ -28,3 +28,13 @@
   video: "https://youtu.be/HB1yorOfAMc"
   year: 2026
   type: "teaching"
+
+- title: "Finite State Machine (FSM) Design and Implementation on FPGA"
+  date: "February 26, 2026"
+  location: "London, United Kingdom"
+  venue: "6CCE3HAD Labs"
+  presenter: "Ali Alsarraf and Zihao Pu"
+  presenter_link: "/people/#zihao-pu"
+  video: "https://youtu.be/hCTE4qvoWRk"
+  year: 2026
+  type: "teaching"
