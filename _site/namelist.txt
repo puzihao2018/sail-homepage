@@ -1,6 +1,4 @@
 Haiyu Mao, https://hybol1993.github.io/
-Zihao Pu, https://www.kcl.ac.uk/people/zihao-pu
-Onur Mutlu, https://people.inf.ethz.ch/omutlu/
-Yintao He, https://yintao-he.github.io/
+Zihao Pu, https://sail.kcl.ac.uk/people/
 Mengyun Zhang, https://sail.kcl.ac.uk/people/
-Christina Giannoula, https://people.mpi-sws.org/~cgiannoula/pages/index.php
+Ali Alsarraf, https://sail.kcl.ac.uk/people/
