@@ -1,2 +1,30 @@
-.bundle
-vendor
+# Ruby / Bundler
+.bundle/
+vendor/
+# Gemfile.lock  # uncomment to treat lock file as local-only
+
+# Jekyll build output — GitHub Pages builds _site/ automatically from source
+_site/
+
+# Jekyll incremental build cache
+.jekyll-cache/
+.jekyll-metadata
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Backup / stray files
+CNAME.save
+*.save
+*.bak
+
+# Claude Code internal tooling
+.claude/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
