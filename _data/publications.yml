@@ -19,128 +19,128 @@
 
 - year: 2026
   title: "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis"
-  authors: "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu"
+  authors: "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, Haiyu Mao, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu"
   venue: "HPCA 2026"
   pdf: "https://hybol1993.github.io/assets/pdf/sage.pdf"
 
 - year: 2026
   title: "GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping"
-  authors: "Julien Eudine, Chu Li, Zhuo Cheng, Renzo Andri, Can Firtina, Mohammad Sadrosadati, Nika Mansouri Ghiasi, Konstantina Koliogeorgi, Anirban Nag, Arash Tavakkol, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Onur Mutlu, Shai Bergman, and Ji Zhang"
+  authors: "Julien Eudine, Chu Li, Zhuo Cheng, Renzo Andri, Can Firtina, Mohammad Sadrosadati, Nika Mansouri Ghiasi, Konstantina Koliogeorgi, Anirban Nag, Arash Tavakkol, Haiyu Mao, and Onur Mutlu, Shai Bergman, and Ji Zhang"
   venue: "HPCA 2026"
   pdf: "https://hybol1993.github.io/assets/pdf/genpairx.pdf"
 
 - year: 2025
   title: "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing"
-  authors: "Kangqi Chen, Rakesh Nadig, Andreas Kosmas Kakolyris, Manos Frouzakis, Nika Mansouri Ghiasi, Yu Liang, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jisung Park, Mohammad Sadrosadati, and Onur Mutlu"
+  authors: "Kangqi Chen, Rakesh Nadig, Andreas Kosmas Kakolyris, Manos Frouzakis, Nika Mansouri Ghiasi, Yu Liang, Haiyu Mao, Jisung Park, Mohammad Sadrosadati, and Onur Mutlu"
   venue: "ISCA 2025"
   pdf: "https://hybol1993.github.io/assets/pdf/reis.pdf"
 
 - year: 2025
   title: "MARS: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem"
-  authors: "Melina Soysal, Konstantina Koliogeorgi, Can Firtina, Nika Mansouri Ghiasi, Rakesh Nadig, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Geraldo Francisco, Yu Liang, Klea Zambaku, Mohammad Sadrosadati, and Onur Mutlu"
+  authors: "Melina Soysal, Konstantina Koliogeorgi, Can Firtina, Nika Mansouri Ghiasi, Rakesh Nadig, Haiyu Mao, Geraldo Francisco, Yu Liang, Klea Zambaku, Mohammad Sadrosadati, and Onur Mutlu"
   venue: "ICS 2025"
   pdf: "https://hybol1993.github.io/assets/pdf/mars.pdf"
 
 - year: 2025
   title: "PAPI: Exploiting Dynamic Parallelism in Large Language Model Decoding with a Processing-In-Memory-Enabled Computing System"
-  authors: "Yintao He, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Christina Giannoula, Mohammad Sadrosadati, Juan Gomez-Luna, Huawei Li, Xiaowei Li, Ying Wang, and Onur Mutlu"
+  authors: "Yintao He, Haiyu Mao, Christina Giannoula, Mohammad Sadrosadati, Juan Gomez-Luna, Huawei Li, Xiaowei Li, Ying Wang, and Onur Mutlu"
   venue: "ASPLOS 2025"
   pdf: "https://hybol1993.github.io/assets/pdf/papi.pdf"
   slides: "/assets/slides/PAPI_asplos25-talk.pptx"
 
 - year: 2025
   title: "CIPHERMATCH: Accelerating Homomorphic Encryption based String Matching via Memory-Efficient Data Packing and In-Flash Processing"
-  authors: "Mayank Kabra, Rakesh Nadig, Harshita Gupta, Rahul Bera, Manos Frouzakis, Vamanan Arulchelvan, Yu Liang, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mohammad Sadrosadati, and Onur Mutlu"
+  authors: "Mayank Kabra, Rakesh Nadig, Harshita Gupta, Rahul Bera, Manos Frouzakis, Vamanan Arulchelvan, Yu Liang, Haiyu Mao, Mohammad Sadrosadati, and Onur Mutlu"
   venue: "ASPLOS 2025"
   pdf: "https://hybol1993.github.io/assets/pdf/ciphermatch.pdf"
 
 - year: 2025
   title: "Ariadne: A Hotness-Aware and Size-Adaptive Compressed Swap Technique for Fast Application Relaunch and Reduced CPU Usage on Mobile Devices"
-  authors: "Yu Liang, Aofeng Shen, Chun Jason Xue, Riwei Pan, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nika Mansouri Ghiasi, Qingcai Jiang, Rakesh Nadig, Lei Li, Rachata Ausavarungnirun, Mohammad Sadrosadati, and Onur Mutlu"
+  authors: "Yu Liang, Aofeng Shen, Chun Jason Xue, Riwei Pan, Haiyu Mao, Nika Mansouri Ghiasi, Qingcai Jiang, Rakesh Nadig, Lei Li, Rachata Ausavarungnirun, Mohammad Sadrosadati, and Onur Mutlu"
   venue: "HPCA 2025"
   pdf: "https://hybol1993.github.io/assets/pdf/ariadne.pdf"
 
 - year: 2024
   title: "MegIS: High-Performance, Energy-Efficient, and Low-Cost Metagenomic Analysis with In-Storage Processing"
-  authors: "Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, Arvid Gollwitzer, Can Firtina, Julien Eudine, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Joel Lindegger, Meryem Banu Cavlak, Alser Mohammed, Jisung Park, and Onur Mutlu"
+  authors: "Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, Arvid Gollwitzer, Can Firtina, Julien Eudine, Haiyu Mao, Joel Lindegger, Meryem Banu Cavlak, Alser Mohammed, Jisung Park, and Onur Mutlu"
   venue: "ISCA 2024"
   pdf: "https://hybol1993.github.io/assets/pdf/megis.pdf"
 
 - year: 2023
   title: "Swordfish: A Framework for Evaluating Deep Neural Network-based Basecalling using Computation-In-Memory with Non-Ideal Memristors"
-  authors: "Taha Shahroodi, Gagandeep Singh, Mahdi Zahedi, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Joel Lindegger, Can Firtina, Stephan Wong, Onur Mutlu, and Said Hamdioui"
+  authors: "Taha Shahroodi, Gagandeep Singh, Mahdi Zahedi, Haiyu Mao, Joel Lindegger, Can Firtina, Stephan Wong, Onur Mutlu, and Said Hamdioui"
   venue: "MICRO 2023"
   pdf: "https://hybol1993.github.io/assets/pdf/swordfish.pdf"
 
 - year: 2023
   title: "Venice: Improving Solid-State Drive Parallelism at Low Cost via Conflict-Free Accesses"
-  authors: "Rakesh Nadig, Mohammad Sadrosadati, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nika Mansouri Ghiasi, Arash Tavakkol, Jisung Park, Hamid Sarbazi-Azad, Juan Gómez Luna, and Onur Mutlu"
+  authors: "Rakesh Nadig, Mohammad Sadrosadati, Haiyu Mao, Nika Mansouri Ghiasi, Arash Tavakkol, Jisung Park, Hamid Sarbazi-Azad, Juan Gómez Luna, and Onur Mutlu"
   venue: "ISCA 2023"
   pdf: "https://hybol1993.github.io/assets/pdf/venice.pdf"
 
 - year: 2023
   title: "RawHash: enabling fast and accurate real-time analysis of raw nanopore signals for large genomes"
-  authors: "Can Firtina, Nika Mansouri Ghiasi, Joel Lindegger, Gagandeep Singh, Meryem Banu Cavlak, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Onur Mutlu"
+  authors: "Can Firtina, Nika Mansouri Ghiasi, Joel Lindegger, Gagandeep Singh, Meryem Banu Cavlak, Haiyu Mao, and Onur Mutlu"
   venue: "Bioinformatics 2023"
   pdf: "https://hybol1993.github.io/assets/pdf/rawhash.pdf"
 
 - year: 2022
   title: "GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping"
-  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mohammed Alser, Mohammad Sadrosadati, Can Firtina, Akanksha Baranwal, Damla Senol Cali, Aditya Manglik, Nour Almadhoun Alserr, and Onur Mutlu"
+  authors: "Haiyu Mao, Mohammed Alser, Mohammad Sadrosadati, Can Firtina, Akanksha Baranwal, Damla Senol Cali, Aditya Manglik, Nour Almadhoun Alserr, and Onur Mutlu"
   venue: "MICRO 2022"
   pdf: "https://hybol1993.github.io/assets/pdf/genpip.pdf"
 
 - year: 2022
   title: "From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures"
-  authors: "Mohammed Alser, Joel Lindegger, Can Firtina, Nour Almadhoun, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Gagandeep Singh, Juan Gomez-Luna, and Onur Mutlu"
+  authors: "Mohammed Alser, Joel Lindegger, Can Firtina, Nour Almadhoun, Haiyu Mao, Gagandeep Singh, Juan Gomez-Luna, and Onur Mutlu"
   venue: "Computational and Structural Biotechnology Journal 2022"
   pdf: "https://hybol1993.github.io/assets/pdf/genanalysis.pdf"
 
 - year: 2022
   title: "GenStore: a high-performance in-storage processing system for genome sequence analysis"
-  authors: "Nika Mansouri Ghiasi, Jisung Park, Harun Mustafa, Jeremie Kim, Ataberk Olgun, Arvid Gollwitzer, Damla Senol Cali, Can Firtina, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nour Almadhoun Alserr, and others"
+  authors: "Nika Mansouri Ghiasi, Jisung Park, Harun Mustafa, Jeremie Kim, Ataberk Olgun, Arvid Gollwitzer, Damla Senol Cali, Can Firtina, Haiyu Mao, Nour Almadhoun Alserr, and others"
   venue: "ASPLOS 2022"
   pdf: "https://hybol1993.github.io/assets/pdf/genstore.pdf"
 
 - year: 2021
   title: "Development of processing-in-memory"
-  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jiwu Shu, Fei Li, and Zhe Liu"
+  authors: "Haiyu Mao, Jiwu Shu, Fei Li, and Zhe Liu"
   venue: "SCIENTIA SINICA Informationis 2021"
   pdf: "https://hybol1993.github.io/assets/pdf/pimsurvey.pdf"
 
 - year: 2020
   title: "LrGAN: A Compact and Energy Efficient PIM-Based Architecture for GAN Training"
-  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jiwu Shu, Mingcong Song, and Tao Li"
+  authors: "Haiyu Mao, Jiwu Shu, Mingcong Song, and Tao Li"
   venue: "IEEE Transactions on Computers 2020"
   pdf: "https://hybol1993.github.io/assets/pdf/LrGAN.pdf"
 
 - year: 2020
   title: "ShieldNVM: An efficient and fast recoverable system for secure non-volatile memory"
-  authors: "Fan Yang, Youmin Chen, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Youyou Lu, and Jiwu Shu"
+  authors: "Fan Yang, Youmin Chen, Haiyu Mao, Youyou Lu, and Jiwu Shu"
   venue: "ACM Transactions on Storage 2020"
   pdf: "https://hybol1993.github.io/assets/pdf/Libra.pdf"
 
 - year: 2019
   title: "No compromises: Secure NVM with crash consistency, write-efficiency and high-performance"
-  authors: "Fan Yang, Youyou Lu, Youmin Chen, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Jiwu Shu"
+  authors: "Fan Yang, Youyou Lu, Youmin Chen, Haiyu Mao, and Jiwu Shu"
   venue: "DAC 2019"
   pdf: "https://hybol1993.github.io/assets/pdf/SecureNVM.pdf"
 
 - year: 2018
   title: "Lergan: A zero-free, low data movement and pim-based gan architecture"
-  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mingcong Song, Tao Li, Yuting Dai, and Jiwu Shu"
+  authors: "Haiyu Mao, Mingcong Song, Tao Li, Yuting Dai, and Jiwu Shu"
   venue: "MICRO 2018"
   pdf: "https://hybol1993.github.io/assets/pdf/LrGAN.pdf"
 
 - year: 2017
   title: "Protect non-volatile memory from wear-out attack based on timing difference of row buffer hit/miss"
-  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Xian Zhang, Guangyu Sun, and Jiwu Shu"
+  authors: "Haiyu Mao, Xian Zhang, Guangyu Sun, and Jiwu Shu"
   venue: "DATE 2017"
   pdf: "https://hybol1993.github.io/assets/pdf/wearout.pdf"
 
 - year: 2015
   title: "Exploring data placement in racetrack memory based scratchpad memory"
-  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Chao Zhang, Guangyu Sun, and Jiwu Shu"
+  authors: "Haiyu Mao, Chao Zhang, Guangyu Sun, and Jiwu Shu"
   venue: "NVMSA 2015"
   pdf: "https://hybol1993.github.io/assets/pdf/racetrack.pdf"
 

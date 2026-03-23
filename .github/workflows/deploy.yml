@@ -1,0 +1,72 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Cancel any in-progress run for the same ref so stale deployments don't race
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write       # required by actions/deploy-pages
+  id-token: write    # required for OIDC token flow used by Pages deployment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Consistency check (warn on issues)
+        # Reports missing-coverage and stale-entry warnings without failing the build.
+        # Change to: python nameupdate.py --check-only --strict
+        # ...if you want CI to fail when namelist.txt and people pages are out of sync.
+        run: python nameupdate.py --check-only
+
+      - name: Inject name hyperlinks into publications.yml
+        # Modifies publications.yml in the workspace only — not committed back to the repo.
+        # The committed file always contains plain author names; HTML is added at build time.
+        run: python nameupdate.py
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true   # installs gems and caches vendor/bundle via Gemfile.lock key
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    # Only deploy on push to main — pull requests get a build check only
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
