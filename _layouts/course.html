@@ -1,0 +1,93 @@
+---
+layout: default
+---
+<article class="course-page">
+
+  <!-- Hero -->
+  <div class="course-hero recruit-hero">
+    <p class="eyebrow">
+      {%- if page.code %}{{ page.code }} &middot; {% endif -%}
+      {{ page.level }} &middot; {{ page.semester }}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {%- if page.description %}
+      <p class="lead">{{ page.description }}</p>
+    {%- endif %}
+  </div>
+
+  <!-- Staff -->
+  {%- if page.staff %}
+  <section class="course-section">
+    <h2>Staff</h2>
+    <div class="course-staff-grid">
+      {%- for s in page.staff %}
+      <div class="course-staff-card">
+        <div class="course-staff-role">{{ s.role }}</div>
+        <div class="course-staff-name">
+          {%- if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>
+          {%- else %}{{ s.name }}{%- endif %}
+        </div>
+        {%- if s.email %}
+        <div class="course-staff-detail">
+          <a href="mailto:{{ s.email }}">{{ s.email }}</a>
+        </div>
+        {%- endif %}
+        {%- if s.office %}
+        <div class="course-staff-detail">Office: {{ s.office }}</div>
+        {%- endif %}
+        {%- if s.office_hours %}
+        <div class="course-staff-detail">Hours: {{ s.office_hours }}</div>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  <!-- Schedule -->
+  {%- if page.schedule %}
+  <section class="course-section">
+    <h2>Schedule</h2>
+    <div class="schedule-wrapper">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Wk</th>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Slides</th>
+            <th>Reading</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for row in page.schedule %}
+          <tr>
+            <td>{{ row.week }}</td>
+            <td>{{ row.date | date: "%b %-d" }}</td>
+            <td>{{ row.topic }}</td>
+            <td>
+              {%- if row.slides and row.slides != "" %}
+                <a class="pub-btn" href="{{ row.slides }}">PDF</a>
+              {%- else %}<span class="tba">—</span>{%- endif %}
+            </td>
+            <td>
+              {%- if row.reading and row.reading != "" %}
+                {{ row.reading }}
+              {%- else %}<span class="tba">—</span>{%- endif %}
+            </td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {%- endif %}
+
+  <!-- Free-form body -->
+  {%- if content and content != "" %}
+  <section class="course-section course-content">
+    {{ content }}
+  </section>
+  {%- endif %}
+
+</article>

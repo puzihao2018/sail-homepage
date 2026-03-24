@@ -29,10 +29,13 @@ nav:
   - title: Positions
     url: /positions/
 
-# Collections (if you later want custom content types)
+# Collections
 collections:
   posts:
     output: true
+  courses:
+    output: true
+    permalink: /teaching/:name/
 
 # Markdown & theme bits
 markdown: kramdown
@@ -47,6 +50,11 @@ defaults:
     values:
       layout: post
       permalink: /blog/:year/:month/:day/:title/
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: course
 
 # Build settings
 exclude:
