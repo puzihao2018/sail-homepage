@@ -146,6 +146,13 @@ To complement the coursework project and facilitate practical FPGA experience, w
 | Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       | Stefan Johannesson |
 | Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   | Ali Alsarraf       |
 
+## Useful Tools
+
+| Tool               | Description                                                    | Source                                                                                       |
+| ------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Verilog Autograder | The online simulation platform for the project                 | https://had26lab.zihaopu.cn                                                                  |
+| openFPGAloader     | Download bitstream to FPGA using any platform, including macOS | [openFPGAloader-Document](https://trabucayre.github.io/openFPGALoader/compatibility/board.html) |
+
 ## Prerequisites
 
 - Basic programming experience (Python, Verilog)
