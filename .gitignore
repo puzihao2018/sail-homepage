@@ -28,3 +28,4 @@ CNAME.save
 .vscode/
 *.swp
 *.swo
+Gemfile.lock
