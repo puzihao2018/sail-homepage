@@ -129,22 +129,22 @@ The RISKing16 is a custom 16-bit Reduced Instruction Set Computer (RISC) process
 
 | Component | Weight | Details                         | Supporting Materials                                                                                        |
 | --------- | ------ | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Task 1    | 20%    | Building 16-bit ALU and Shifter | [Task 1 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%201.pdf)                               |
-| Task 2    | 20%    | Building CPU Datapath           | [Task 2 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%202.pdf)                               |
-| Task 3    | 20%    | Building CPU FSM                | [Task 3 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%203.pdf)                               |
-| Task 4    | 20%    | Supporting Memory               | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf)                               |
-| Task 5    | 20%    | Supporting Branching and IO     | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf) Task 5 contents are also here |
+| Task 1    | 20%    | Building 16-bit ALU and Shifter | [Task 1 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%201.pdf)                            |
+| Task 2    | 20%    | Building CPU Datapath           | [Task 2 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%202.pdf)                            |
+| Task 3    | 20%    | Building CPU FSM                | [Task 3 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%203.pdf)                            |
+| Task 4    | 20%    | Supporting Memory               | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf)                            |
+| Task 5    | 20%    | Supporting Branching and IO     | [Task 5 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%205.pdf)                            |
 | Bonus     | 20%    | Pipelining                      | NA                                                                                                          |
 
 ## Practical Skills
 
 To complement the coursework project and facilitate practical FPGA experience, we have developed three introductory lab demonstrations.
 
-| Component | Topic                                        | Slides                                                              | Supporting Materials                                                     | Instructor         |
-| --------- | -------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------ |
-| Lab 1     | Getting started with FPGA and VIVADO         | [Lab 1](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.pdf) | [Lab 1 Code](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.zip) | Zihao Pu           |
-| Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       | Stefan Johannesson |
-| Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   | Ali Alsarraf       |
+| Component | Topic                                        | Slides                                                              | Supporting Materials                                                     | Instructor            | Lab Video |
+| --------- | -------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------    |-----------|
+| Lab 1     | Getting started with FPGA and VIVADO         | [Lab 1](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.pdf) | [Lab 1 Code](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.zip) | Zihao Pu        |[Lab 1](https://youtu.be/4a6D7fwtctE?si=NV7YZWoOJYyxeGOi)  |
+| Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       | Stefan Johannesson  |[Lab 2](https://youtu.be/HB1yorOfAMc?si=WJUBYZgnefTBGNAs)  |
+| Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   | Ali Alsarraf    |[Lab 3](https://youtu.be/hCTE4qvoWRk?si=5nXZ-25UH6331x1E)  |
 
 ## Useful Tools
 

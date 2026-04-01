@@ -31,9 +31,10 @@ bundle exec jekyll serve
 - `publications.md` – generated from `_data/publications.yml`
 - `projects.md` – generated from `_data/projects.yml`
 - `talks.md` – generated from `_data/talks.yml`
-- `teaching.md` – generated from `_data/courses.yml`; individual course pages live in `_courses/`
+- `teaching.md` – generated from `_data/courses.yml` (supports `description` and `image` for thumbnail cards); individual course pages live in `_courses/`
 - `_posts/` – news/blog updates
 - `assets/img/` – photos and logos
+- `assets/img/course-thumbnails/` – course listing thumbnail images
 - `assets/slides/` – lecture slide PDFs
 - `_config.yml` – site name, nav, Google Analytics ID, etc.
 
@@ -47,8 +48,12 @@ Open `_data/courses.yml` and append an entry:
   code: "7CCE3CAR"
   level: "Postgraduate"
   url: "/teaching/autumn2026-computer-architecture/"   # leave "" until page exists
+  description: "One-sentence description shown on the teaching listing."
+  # image: "/assets/img/course-thumbnails/computer-architecture.jpg"  # optional thumbnail
 ```
 Newest semester first — the listing groups by semester automatically.
+- `description`: Brief summary shown on the course card (recommended)
+- `image`: Optional thumbnail path; if omitted, the card displays without an image
 
 ### Creating an individual course page
 1. Copy an existing file from `_courses/` and rename it:
@@ -105,6 +110,14 @@ Drop PDF files into `assets/slides/` and reference them in the schedule:
 ```yaml
 slides: "/assets/slides/car-w02.pdf"
 ```
+
+### Uploading course thumbnails
+Course thumbnails are optional but make the teaching listing more visually appealing.
+Drop images into `assets/img/course-thumbnails/` and reference them in `courses.yml`:
+```yaml
+image: "/assets/img/course-thumbnails/hardware-design.jpg"
+```
+Recommended aspect ratio: ~16:9 or 4:3 landscape. Images are cropped to fit a fixed-height card.
 
 ### Publication workflow
 Author hyperlinks are injected automatically by GitHub Actions on every push to `main`

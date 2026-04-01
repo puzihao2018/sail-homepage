@@ -1,4 +1,4 @@
-# Each entry: semester, title, code (optional), level, url (leave blank until course page exists)
+# Each entry: semester, title, code (optional), level, url (leave blank until course page exists), image (optional thumbnail)
 # Semesters are listed newest-first; group_by preserves insertion order in Jekyll 3.x.
 
 - semester: "Spring 2026"
@@ -6,4 +6,6 @@
   code: "6CCE3HAD"
   level: "Undergraduate"
   url: "/teaching/spring2026-hardware-design/"
+  image: "/assets/img/course-thumbnails/hardware-design.png"
+  description: "Digital logic, combinational and sequential circuits, HDLs, and processor design."
 
