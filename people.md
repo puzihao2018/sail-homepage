@@ -12,7 +12,7 @@ permalink: /people/
     {% if m.photo %}<img id="{{ m.name | slugify }}" src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
-    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.email %}<p>Email:<br><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     {% if m.web %}<p>Homepage: <a href="{{ m.web }}" target="_blank" rel="noopener">Personal</a></p>{% endif %}
     <!-- {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %} -->
   </div>
@@ -31,7 +31,7 @@ permalink: /people/
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
     {% if m.comment %}<p>{{ m.comment }}</p>{% endif %}
-    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.email %}<p>Email:<br><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
     {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
     {% if m.work %}<p><strong>Work:</strong> {{ m.work }}</p>{% endif %}
@@ -66,7 +66,7 @@ permalink: /people/
     {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
-    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.email %}<p>Email:<br><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
     {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
   </div>
@@ -82,7 +82,7 @@ permalink: /people/
     {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
-    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.email %}<p>Email:<br><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
     {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
   </div>
@@ -97,7 +97,7 @@ permalink: /people/
     {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
-    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.email %}<p>Email:<br><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
     {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
   </div>
