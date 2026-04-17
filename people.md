@@ -24,7 +24,7 @@ permalink: /people/
 
 <!-- ## PhD Students -->
 
-<div class="card-grid">
+<div class="card-grid-4">
 {% for m in site.data.phds %}
   <div class="card">
     {% if m.photo %}<img id="{{ m.name | slugify }}" src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}

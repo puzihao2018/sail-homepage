@@ -7,7 +7,7 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--fg); background: var(--bg); }
-.container { max-width: 980px; margin: 2rem auto; padding: 0 1rem; }
+.container { max-width: 1320px; margin: 2rem auto; padding: 0 1rem; }
 .nav { border-bottom: 1px solid var(--border); background: #fafafa; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 980px; margin: 0 auto; padding: .75rem 1rem; }
 .nav .brand { font-weight: 700; color: var(--fg); text-decoration: none; }
@@ -52,11 +52,16 @@ footer { border-top: 1px solid var(--border); }
 h1, h2, h3 { line-height: 1.2; }
 .post .meta { color: var(--muted); }
 .card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.card-grid-4 {
   display: grid;
   gap: 1rem;
-  /* each column is at least 220px, but we center the cards and cap their width */
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  justify-items: center;   /* center cards inside their grid cells */
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
 }
 .card img {
   width: 100%;
@@ -80,8 +85,16 @@ h1, h2, h3 { line-height: 1.2; }
   border-radius: 8px;
   padding: 1rem;
   background: white;
-  width: 100%;        /* take available column width… */
-  max-width: 320px;   /* …but never grow beyond this */
+  width: 100%;
+  max-width: 320px;
+}
+.card-grid-4 .card {
+  max-width: none;
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid var(--border); padding: .5rem .6rem; text-align: left; }

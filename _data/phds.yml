@@ -15,6 +15,14 @@
   master: King's College London
   bachelor: King's College London
 
+- name: Jingyuan Qu
+  role: Visiting PhD Student
+  comment: PhD Student at Harbin Institute of Technology
+  email: jingyuan.qu@kcl.ac.uk
+  topics: [PIM, RRAM Reliability]
+  photo: /assets/img/jingyuan.png
+  bachelor: Harbin Institute of Technology
+
 - name: Mengyun Zhang
   role: Cooperator
   comment: PhD Student at Tsinghua University
