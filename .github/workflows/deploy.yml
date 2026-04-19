@@ -34,7 +34,7 @@ jobs:
       - name: Consistency check (warn on issues)
         # Reports missing-coverage and stale-entry warnings without failing the build.
         # Change to: python nameupdate.py --check-only --strict
-        # ...if you want CI to fail when namelist.txt and people pages are out of sync.
+        # ...if you want CI to fail when namelist.yml and people pages are out of sync.
         run: python nameupdate.py --check-only
 
       - name: Inject name hyperlinks into publications.yml

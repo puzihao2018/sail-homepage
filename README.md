@@ -120,10 +120,20 @@ image: "/assets/img/course-thumbnails/hardware-design.jpg"
 Recommended aspect ratio: ~16:9 or 4:3 landscape. Images are cropped to fit a fixed-height card.
 
 ### Publication workflow
-Author hyperlinks are injected automatically by GitHub Actions on every push to `main`
-(via `nameupdate.py`). To update the known-collaborators list, edit `namelist.txt`:
+Author hyperlinks on the publications page and the author-filter chips are both
+driven by `_data/namelist.yml`. `nameupdate.py` reads this file at build time to
+inject `<a>` tags into `_data/publications.yml`; Jekyll reads it via
+`site.data.namelist` to render the filter bar. To add a collaborator, append:
+```yaml
+- name: "Full Name"
+  url: "https://their-homepage.example.com"
 ```
-Full Name | https://their-homepage.example.com
+The name must match the spelling used in publication author lists exactly.
+
+Each entry in `_data/publications.yml` should include a `type` field so the
+conference/journal filter works:
+```yaml
+type: conference    # or: journal
 ```
 
 ## Collaboration workflow

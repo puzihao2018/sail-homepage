@@ -2,6 +2,10 @@
 """
 nameupdate.py — inject name hyperlinks into _data/publications.yml
 
+Reads the author→URL mapping from _data/namelist.yml (a list of
+{name, url} entries) so the same file can also power the author-filter
+chips on the publications page via site.data.namelist.
+
 Usage:
     python nameupdate.py                       # check consistency (warn) + inject links
     python nameupdate.py --check-only          # report issues, do NOT modify files
@@ -23,19 +27,19 @@ import yaml  # PyYAML — only non-stdlib dependency
 # ---------------------------------------------------------------------------
 
 def load_namelist(path: Path) -> Dict[str, str]:
-    mapping: Dict[str, str] = {}
+    """Load _data/namelist.yml → {name: url}. Entries missing either field are skipped."""
     with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            # Expect format: <name>, <url>
-            parts = [p.strip() for p in line.split(",", 1)]
-            if len(parts) != 2:
-                continue
-            name, url = parts
-            if name and url:
-                mapping[name] = url
+        parsed = yaml.safe_load(f)
+    mapping: Dict[str, str] = {}
+    if not parsed:
+        return mapping
+    for entry in parsed:
+        if not isinstance(entry, dict):
+            continue
+        name = entry.get("name")
+        url = entry.get("url")
+        if name and url:
+            mapping[name] = url
     return mapping
 
 
@@ -62,7 +66,7 @@ def hyperlink_names(text: str, name_url: Dict[str, str]) -> str:
 
 def process_publications(repo_root: Path) -> None:
     """Strip existing HTML from publications.yml then re-inject name hyperlinks."""
-    namelist_path = repo_root / "namelist.txt"
+    namelist_path = repo_root / "_data" / "namelist.yml"
     publications_path = repo_root / "_data" / "publications.yml"
 
     if not namelist_path.exists():
@@ -133,10 +137,10 @@ def check_consistency(
 
     Check 1 — Missing coverage:
         A lab member whose name appears in a publication author string
-        but is NOT in namelist.txt → their name won't be hyperlinked.
+        but is NOT in namelist.yml → their name won't be hyperlinked.
 
     Check 2 — Stale entries:
-        A name in namelist.txt that never appears in any publication
+        A name in namelist.yml that never appears in any publication
         author string → the entry may be outdated or misspelled.
     """
     namelist_names: Set[str] = set(name_map.keys())
@@ -154,7 +158,7 @@ def check_consistency(
         if re.search(rf"\b{re.escape(member)}\b", all_authors):
             messages.append(
                 f"WARNING [missing-coverage]: '{member}' appears in publications "
-                f"but is not in namelist.txt — their name will not be hyperlinked"
+                f"but is not in namelist.yml — their name will not be hyperlinked"
             )
             had_issues = True
 
@@ -162,7 +166,7 @@ def check_consistency(
     for name in sorted(namelist_names):
         if not re.search(rf"\b{re.escape(name)}\b", all_authors):
             messages.append(
-                f"WARNING [stale-entry]: '{name}' is in namelist.txt "
+                f"WARNING [stale-entry]: '{name}' is in namelist.yml "
                 f"but does not appear in any publication author list"
             )
             had_issues = True
@@ -191,7 +195,7 @@ def main() -> None:
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parent
-    namelist_path = repo_root / "namelist.txt"
+    namelist_path = repo_root / "_data" / "namelist.yml"
 
     if not namelist_path.exists():
         print(f"ERROR: namelist not found: {namelist_path}", file=sys.stderr)
@@ -204,7 +208,7 @@ def main() -> None:
         print(msg, file=sys.stderr)
 
     if not messages:
-        print("OK: namelist.txt is consistent with people pages and publications.", file=sys.stderr)
+        print("OK: namelist.yml is consistent with people pages and publications.", file=sys.stderr)
 
     if args.check_only:
         sys.exit(1 if (had_issues and args.strict) else 0)
