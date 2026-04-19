@@ -1,0 +1,14 @@
+# Known authors used by nameupdate.py (hyperlink injection on the publications page)
+# and by publications.md (author filter chips).
+#
+# Add one entry per known collaborator / lab member whose name should be linked
+# when it appears in a publication author string. Exact match — use the same
+# spelling as in _data/publications.yml.
+- name: "Haiyu Mao"
+  url: "https://hybol1993.github.io/"
+- name: "Zihao Pu"
+  url: "https://sail.kcl.ac.uk/people/"
+- name: "Mengyun Zhang"
+  url: "https://sail.kcl.ac.uk/people/"
+- name: "Ali Alsarraf"
+  url: "https://sail.kcl.ac.uk/people/"
