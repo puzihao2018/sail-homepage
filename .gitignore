@@ -30,3 +30,4 @@ CNAME.save
 *.swo
 Gemfile.lock
 CLAUDE.md
+mise.toml

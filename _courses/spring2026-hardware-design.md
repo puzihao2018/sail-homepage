@@ -142,17 +142,17 @@ On successful completion of this module, students will be able to:
 
 # Lecture Schedule
 
-| Week   | Topic                                                    | Slides                                                                                                                      | Tutorials                                                                                     |
-| ------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Week   | Topic                                                    | Slides                                                                                                                      | Tutorials                                                                                  |
+| ------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | Week 1 | von Neumann Model & Instruction Set Architectures        | [Lecture 1](/assets/slides/spring2026-hardware-design/lecture/Lecture 1 - vonneumann-isa.pdf)                               | [Tutorial 1](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%201%20Annotated.pdf) |
-| Week 2 | Instruction Set Architectures II                         | [Lecture 2](/assets/slides/spring2026-hardware-design/lecture/Lecture 2 - instruction-set-architecture-ii.pdf)              | [Tutorial 2](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%202.pdf) |
-| Week 3 | ISA, Microarchitecture, and Assembly                     | [Lecture 3](/assets/slides/spring2026-hardware-design/lecture/Lecture 3 - ISA-Microarchitecture-Assembly.pdf)               | [Tutorial 3](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%203%20Answer.pdf)             |
-| Week 4 | Single-Cycle Microarchitecture: build the whole CPU once | [Lecture 4](/assets/slides/spring2026-hardware-design/lecture/Lecture 4 - Single-Cycle-Microarchitecture.pdf)               | [Tutorial 4](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%204%20Answer.pdf) |
-| Week 5 | Multi-Cycle Microarchitecture and Pipelining             | [Lecture 5](/assets/slides/spring2026-hardware-design/lecture/Lecture 5 - Mutli-Cycle-Microarchitecture-and-Pipelining.pdf) | [Tutorial 5](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%205%20Answer.pdf) |
-| Week 6 | Pipelined Processor Design                               | [Lecture 6](/assets/slides/spring2026-hardware-design/lecture/Lecture 6 - Pipelining.pdf)                                   | [Tutorial 6](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%206%20Answer.pdf) |
-| Week 7 | Memory                                                   | [Lecture 7](/assets/slides/spring2026-hardware-design/lecture/Lecture 7 - memory.pdf)                                       | [Tutorial 7](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%207%20Answer.pdf) |
-| Week 8 | Cache                                                    | [Lecture 8](/assets/slides/spring2026-hardware-design/lecture/Lecture 8 - cache.pdf)                                        | [Tutorial 8](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%208%20Answer.pdf) |
-| Week 9 | Cache II and Storage                                     | [Lecture 9](/assets/slides/spring2026-hardware-design/lecture/Lecture 9 - cache 2 and storage .pdf)                         | N/A  |
+| Week 2 | Instruction Set Architectures II                         | [Lecture 2](/assets/slides/spring2026-hardware-design/lecture/Lecture 2 - instruction-set-architecture-ii.pdf)              | [Tutorial 2](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%202.pdf)             |
+| Week 3 | ISA, Microarchitecture, and Assembly                     | [Lecture 3](/assets/slides/spring2026-hardware-design/lecture/Lecture 3 - ISA-Microarchitecture-Assembly.pdf)               | [Tutorial 3](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%203%20Answer.pdf)    |
+| Week 4 | Single-Cycle Microarchitecture: build the whole CPU once | [Lecture 4](/assets/slides/spring2026-hardware-design/lecture/Lecture 4 - Single-Cycle-Microarchitecture.pdf)               | [Tutorial 4](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%204%20Answer.pdf)    |
+| Week 5 | Multi-Cycle Microarchitecture and Pipelining             | [Lecture 5](/assets/slides/spring2026-hardware-design/lecture/Lecture 5 - Mutli-Cycle-Microarchitecture-and-Pipelining.pdf) | [Tutorial 5](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%205%20Answer.pdf)    |
+| Week 6 | Pipelined Processor Design                               | [Lecture 6](/assets/slides/spring2026-hardware-design/lecture/Lecture 6 - Pipelining.pdf)                                   | [Tutorial 6](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%206%20Answer.pdf)    |
+| Week 7 | Memory                                                   | [Lecture 7](/assets/slides/spring2026-hardware-design/lecture/Lecture 7 - memory.pdf)                                       | [Tutorial 7](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%207%20Answer.pdf)    |
+| Week 8 | Cache                                                    | [Lecture 8](/assets/slides/spring2026-hardware-design/lecture/Lecture 8 - cache.pdf)                                        | [Tutorial 8](/assets/slides/spring2026-hardware-design/tutorial/Tutorial%208%20Answer.pdf)    |
+| Week 9 | Cache II and Storage                                     | [Lecture 9](/assets/slides/spring2026-hardware-design/lecture/Lecture 9 - cache 2 and storage .pdf)                         | N/A                                                                                        |
 
 ---
 
@@ -173,14 +173,17 @@ The RISKing16 is a custom 16-bit Reduced Instruction Set Computer (RISC) process
 
 **Modular Learning**: The project is structured to master individual components—such as the ALU, Register File, and Control Unit—before integrating them into a multi-cycle or pipelined processor.
 
-| Component | Weight | Details                         | Supporting Materials                                                          |
-| --------- | ------ | ------------------------------- | ----------------------------------------------------------------------------- |
-| Task 1    | 20%    | Building 16-bit ALU and Shifter | [Task 1 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%201.pdf) |
-| Task 2    | 20%    | Building CPU Datapath           | [Task 2 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%202.pdf) |
-| Task 3    | 20%    | Building CPU FSM                | [Task 3 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%203.pdf) |
-| Task 4    | 20%    | Supporting Memory               | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf) |
-| Task 5    | 20%    | Supporting Branching and IO     | [Task 5 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%205.pdf) |
-| Bonus     | 20%    | Pipelining                      | NA                                                                            |
+**Supporting Materials**: You can use the slides as the instruction to build the RISking processor, while the task templates are the prepared Vivado projects to help you get started without spent too much time on managing Vivado. The default version for Vivado is [2025.2](https://www.amd.com/en/support/downloads/adaptive-socs-and-fpgas/development-tools/2025-2.html).
+
+
+| Component | Weight | Details                         | Slides                                                                        | Template Project |
+| --------- | ------ | ------------------------------- | ----------------------------------------------------------------------------- | ---------------- |
+| Task 1    | 20%    | Building 16-bit ALU and Shifter | [Task 1 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%201.pdf) | [Task1_Temp](/assets/slides/spring2026-hardware-design/lab/Task1_Student_temp.zip)       |
+| Task 2    | 20%    | Building CPU Datapath           | [Task 2 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%202.pdf) |[Task2_Temp](/assets/slides/spring2026-hardware-design/lab/Task2_Student_temp.zip)|
+| Task 3    | 20%    | Building CPU FSM                | [Task 3 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%203.pdf) |[Task3_Temp](/assets/slides/spring2026-hardware-design/lab/Task3_Student_temp.zip)|
+| Task 4    | 20%    | Supporting Memory               | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf) |[Final_Temp](/assets/slides/spring2026-hardware-design/lab/Task_Final_Student_temp.zip)|
+| Task 5    | 20%    | Supporting Branching and IO     | [Task 5 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%205.pdf) |This part should be built based on finished task 4|
+| Bonus     | 20%    | Pipelining                      | No step-by-step instruction provided for bonus task |                  |
 
 ### Practical Skills
 
@@ -196,8 +199,9 @@ To complement the coursework project and facilitate practical FPGA experience, w
 
 | Tool               | Description                                                    | Source                                                                                       |
 | ------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Verilog Autograder | The online simulation platform for the project                 | [Verilog Autograder](https://had26lab.zihaopu.cn)                                               |
+| Verilog Autograder | The online simulation platform for the project                 | [Verilog Autograder](https://had26lab.sail-research-group.com/)                                               |
 | openFPGALoader     | Download bitstream to FPGA using any platform, including macOS | [openFPGALoader-Document](https://trabucayre.github.io/openFPGALoader/compatibility/board.html) |
+| Icarus Verilog |An open source Verilog/System Verilog simulator. It is also the tool we use to build our online simulator| [Icarus Verilog](https://github.com/steveicarus/iverilog)|
 
 ### Prerequisites
 
@@ -214,4 +218,5 @@ To complement the coursework project and facilitate practical FPGA experience, w
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0y5L76wey1tG5l5z&list=PLSxjD_JEbzkwLRZu8DoWHlJN2zbyclPGS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - Tutorial recordings:
+
 <iframe src='https://www.kaltura.com/p/2368101/embedPlaykitJs/uiconf_id/50869822?iframeembed=true&playlist_id=1_eamm1qut&config[provider]={"widgetId":"1_dnptajz7"}' style='width: 740px;height: 330px' allowfullscreen webkitallowfullscreen mozAllowFullScreen allow='autoplay *; fullscreen *; encrypted-media *' sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder='0' title='' ></iframe>
